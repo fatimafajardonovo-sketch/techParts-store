@@ -1,0 +1,25 @@
+{
+  "name": "practica-0411",
+  "version": "1.0.0",
+  "description": "",
+  "main": "seed-productos.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/fatimafajardonovo-sketch/techParts-store.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "module",
+  "bugs": {
+    "url": "https://github.com/fatimafajardonovo-sketch/techParts-store/issues"
+  },
+  "homepage": "https://github.com/fatimafajardonovo-sketch/techParts-store#readme",
+  "dependencies": {
+    "dotenv": "^18.0.9",
+    "mongoose": "^9.11.4"
+  }
+}

@@ -72,8 +72,7 @@ async function poblarBaseDeDatos() {
         console.log('Conexión a MongoDB establecida.');
 
         const productosBorrados = await Producto.deleteMany({}); // Elimina todos los productos existentes; los que ya hay
-        console.log(`Productos anteriores eliminados: ${productosBorrados.length} productos borrados.`);
-
+console.log(`Productos anteriores eliminados: ${productosBorrados.deletedCount} productos borrados.`);
         const productosInsertados = await Producto.insertMany(productosIniciales); // Me traigo todos los productos iniciales y los inserto en la base de datos
         console.log(`Se insertaron ${productosInsertados.length} productos.`);
 
