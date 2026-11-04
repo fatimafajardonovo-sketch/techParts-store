@@ -13,6 +13,10 @@ export default async function handler(req, res) {
     try {
         // La URI se lee desde .env en local o desde Vercel al publicar
         const uri = process.env.MONGODB_URI;
+        if (!uri) {
+            return res.status(500).json({ error: 'Falta configurar MONGODB_URI.' });
+        }
+
         // Conecta solo si todavía no hay una conexión activa
         if (mongoose.connection.readyState === 0) {
             await mongoose.connect(uri);
